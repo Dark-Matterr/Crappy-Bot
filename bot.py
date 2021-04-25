@@ -20,7 +20,7 @@ subject_code = {
 "_6883_1" : ["Operations Research", 797373512377303060, "https://meet.google.com/jds-xsgw-uih?pli=1&authuser=1"],
 "_6964_1" : ["Physical Education 4", 797373404419325962, ""],
 "_6258_1" : ["Programming Languages", 797372836591042580, "https://meet.google.com/ujk-ydxe-tdx?pli=1&authuser=1"],
-"_7125_1" : ["Rizal's Life & Work", 797373471189106689, "https://meet.google.com/yxk-bnzf-zre?lookupauth=true&pli=1&authuser=1"],
+"_7125_1" : ["Rizal's Life & Work", 797373471189106689, "https://meet.google.com/ksk-ypyw-sir?lookupauth=true&pli=1&authuser=1"],
 "_7345_1" : ["Theology 4", 797373438141792276, "https://meet.google.com/hee-hhjk-bqw?pli=1&authuser=1"], 
 }
 discord_token = 'DISCORD_TOKEN_HERE'
@@ -54,7 +54,6 @@ def data_onDay(data):
 	today_daydate = datetime.today()
 	arr = dict()
 	today_date = datetime.strptime(str(str(today_daydate.month) +"/"+str(int(today_daydate.day))+"/"+str(today_daydate.year)+ " "+str(today_daydate.hour)+":"+ str(today_daydate.minute)+ ":" +str(today_daydate.second)), "%m/%d/%Y %H:%M:%S")
-	print(today_date)
 	for key in data:
 		data_date = dateutil.parser.parse(str(key))
 		data_date += timedelta(hours=8)
